@@ -1,18 +1,19 @@
-# **2048 avec p5.js - Guide Étape par Étape**
+![2048](2048.png)
+# **🌪 - 2048 avec p5.js - Guide Étape par Étape**
 
-## **Introduction**
+## **🤠 - Introduction**
 
-Bienvenue dans ce projet de création du jeu 2048 avec p5.js ! Ce guide est conçu pour aider les lycéens à découvrir la programmation tout en s'amusant. Vous allez apprendre à réaliser un jeu simple et visuel avec p5.js, une bibliothèque JavaScript idéale pour créer des applications graphiques.
+Bienvenue dans ce projet de création du **jeu 2048 avec p5.js !** Ce guide est conçu pour aider les lycéens à découvrir la programmation tout en s'amusant. Vous allez apprendre à réaliser un jeu simple et visuel avec **p5.js**, une bibliothèque **JavaScript** idéale pour créer des applications graphiques.
 
-Nous allons créer une version fonctionnelle du célèbre jeu 2048. Ce guide est décomposé en plusieurs étapes, avec des morceaux de code à compléter. L'objectif est de vous encourager à réfléchir et à trouver les solutions par vous-mêmes. N'oubliez pas, l'apprentissage est encore plus enrichissant lorsque vous explorez et recherchez par vous-mêmes !
+Nous allons créer une version fonctionnelle du célèbre **jeu 2048**. Ce guide est décomposé en plusieurs étapes, avec des morceaux de code à compléter. L'objectif est de vous encourager à réfléchir et à trouver les solutions par vous-mêmes. N'oubliez pas, l'apprentissage est encore plus enrichissant lorsque vous explorez et recherchez par vous-mêmes !
 
-## **Présentation de p5.js**
+## **⚙️ - Présentation de p5.js**
 
-p5.js est une bibliothèque JavaScript qui simplifie la création de visuels interactifs. Elle est très utilisée pour des projets artistiques, graphiques et éducatifs. Vous allez l'utiliser dans un éditeur en ligne pratique, qui vous permet de tester votre code directement dans votre navigateur.
+**p5.js** est une bibliothèque **JavaScript** qui simplifie la création de visuels interactifs. Elle est très utilisée pour des projets artistiques, graphiques et éducatifs. Vous allez l'utiliser dans un éditeur en ligne pratique, qui vous permet de tester votre code directement dans votre navigateur.
 
 Pour ce projet, nous allons utiliser l'éditeur en ligne de p5.js : editor.p5js.org. Il ne nécessite aucune installation, ce qui rend le début de ce projet très simple.
 
-# **Étapes du projet**
+# **📋 - Étapes du projet**
 
 ## **⛳️ 1. Mise en place de l'environnement**
 
