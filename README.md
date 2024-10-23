@@ -119,6 +119,16 @@ function drawGrid(grid) {
   let w = CANVAS_SIZE / GRID_SIZE;
   for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
+      let val = ___[_][_];
+      let col = TILE_COLORS[__] || [__, __, __];
+      fill(...col);
+      stroke(0);
+      rect(j * w, i * w, w, w);
+      if (__ !== ___) {
+        text___(CENTER, CENTER);
+        text___(32);
+        fill(0);
+        text(val, j * w + w / 2, i * w + w / 2);
     }
   }
 }
