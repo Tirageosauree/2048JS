@@ -89,6 +89,13 @@ __Code à compléter :__
 ``` javascript
 function addNumber(grid) {
   let options = [];
+  for (let i = 0; i < GRID_SIZE; i++) {
+    for (let j = 0; j < GRID_SIZE; j++) {
+      if (grid[i][j] === EMPTY_TILE) {
+        options.push({ x: i, y: j });
+        }
+      }
+    }
   if (options.length > __) {
     let spot = ___
     grid[__][__] = random(1) > 0.5 ? ___ : ___;
