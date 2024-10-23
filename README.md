@@ -89,16 +89,9 @@ __Code à compléter :__
 ``` javascript
 function addNumber(grid) {
   let options = [];
-  for (let i = 0; i < GRID_SIZE; i++) {
-    for (let j = 0; j < GRID_SIZE; j++) {
-      if (grid[i][j] === _____) {
-        options.push({ x: i, y: j });
-      }
-    }
-  }
-  if (options.length > 0) {
-    let spot = random(options);
-    grid[spot.x][spot.y] = random(1) > 0.5 ? ___ : ___;
+  if (options.length > __) {
+    let spot = ___
+    grid[__][__] = random(1) > 0.5 ? ___ : ___;
   }
 }
 ```
@@ -119,17 +112,6 @@ function drawGrid(grid) {
   let w = CANVAS_SIZE / GRID_SIZE;
   for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
-      let val = grid[i][j];
-      let col = TILE_COLORS[val] || [60, 60, 60];
-      fill(...col);
-      stroke(0);
-      rect(j * w, i * w, w, w);
-      if (val !== EMPTY_TILE) {
-        textAlign(CENTER, CENTER);
-        textSize(32);
-        fill(0);
-        text(val, j * w + w / 2, i * w + w / 2);
-      }
     }
   }
 }
@@ -150,28 +132,6 @@ __Code à compléter :__
 function keyPressed() {
   let moved = false;
   let past = copyGrid(grid);
-  switch (keyCode) {
-    case RIGHT_ARROW:
-      grid = slideRight(grid);
-      break;
-    case LEFT_ARROW:
-      grid = _____(grid);
-      break;
-    case DOWN_ARROW:
-      grid = _____(grid);
-      break;
-    case UP_ARROW:
-      grid = _____(grid);
-      break;
-    default:
-      return;
-  }
-  if (!compare(past, grid)) {
-    moved = true;
-  }
-  if (moved) {
-    addNumber(grid);
-  }
 }
 ```
 
@@ -187,26 +147,12 @@ function keyPressed() {
 __Code à compléter :__
 ``` javascript
 function slideAndCombine(row) {
-  row = slide(row);
-  row = combine(row);
-  return slide(row);
 }
 
 function slide(row) {
-  let newRow = row.filter(val => val);
-  let missing = GRID_SIZE - newRow.length;
-  let zeros = Array(missing).fill(EMPTY_TILE);
-  return zeros.concat(newRow);
 }
 
 function combine(row) {
-  for (let i = row.length - 1; i >= 1; i--) {
-    if (row[i] === row[i - 1] && row[i] !== EMPTY_TILE) {
-      row[i] *= ___;
-      row[i - 1] = _____;
-    }
-  }
-  return row;
 }
 ```
 
@@ -223,10 +169,10 @@ __Code à compléter :__
 
 ``` javascript
 if (!compare(past, grid)) {
-  moved = true;
+____
 }
 if (moved) {
-  addNumber(grid);
+____
 }
 ```
 
@@ -243,28 +189,11 @@ __Code à compléter :__
 
 ``` javascript
 function isGameOver(grid) {
-  for (let i = 0; i < GRID_SIZE; i++) {
-    for (let j = 0; j < GRID_SIZE; j++) {
-      if (grid[i][j] === EMPTY_TILE) {
-        return false;
-      }
-      if (i !== GRID_SIZE - 1 && grid[i][j] === grid[i + 1][j]) {
-        return false;
-      }
-      if (j !== GRID_SIZE - 1 && grid[i][j] === grid[i][j + 1]) {
-        return false;
-      }
-    }
-  }
-  return true;
 }
 
 function isGameWon(grid) {
   for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
-      if (grid[i][j] === _____) {
-        return true;
-      }
     }
   }
   return false;
